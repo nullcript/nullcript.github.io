@@ -1,0 +1,282 @@
+/* ---------- Main Styles */
+
+#website {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #b2b2b2;
+    opacity: 1;
+}
+
+.content {
+    max-width: 1570px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--theme1);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.section1 {
+    width: 100px;
+    background-color: var(--theme1);
+    height: 100%;
+}
+
+.section2 {
+    width: 400px;
+    background-color: var(--theme2);
+    height: 100%;
+}
+
+.section3 {
+    width: 1070px;
+    background-color: var(--theme1);
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- .section1 Styles */
+
+nav,
+ul {
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav li {
+    display: block;
+    width: 100%;
+    height: 85px;
+    border-bottom: 2px solid var(--theme2);
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+}
+
+.icon:hover {
+    border-bottom: 2px solid var(--theme3);
+    cursor: pointer;
+}
+
+.icon:hover i {
+    color: var(--theme3);
+}
+
+.mi {
+    color: var(--theme4);
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.active {
+    border-bottom: 2px solid var(--theme3);
+    background-color: var(--theme2);
+    color: var(--theme3);
+}
+
+.active i {
+    color: var(--theme3);
+}
+
+.hamb {
+    font-size: 36px;
+    color: white;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: none !important;
+}
+
+.hamb:hover {
+    color: var(--theme3);
+    cursor: pointer;
+}
+
+/* ---------- .section2 Styles */
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.topSec2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.downSec2 {
+    width: 100%;
+    height: calc(100% - 600px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.copyWrite {
+    color: var(--theme4);
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+.headerPhoto {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profilePhoto {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+}
+
+.headerTitle {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitle h2 {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.headerTitle h3 {
+    font-size: 0.7em;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    padding: 7px;
+}
+
+.headerSocials {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 25px;
+    margin: 1px 0.8em;
+    padding: 7px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+    border: 2px solid var(--theme2);
+}
+
+.hi {
+    color: var(--theme4);
+    font-size: 30px;
+    padding: 7px;
+    border-bottom: 2px solid var(--theme2);
+}
+
+.hi:hover {
+    color: var(--theme3);
+    border-bottom: 2px solid var(--theme3);
+}
+
+.headerCV {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv {
+    color: var(--theme4);
+    border: 2px solid var(--theme4);
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    border-radius: 5px 5px 5px 35px;
+    transition: all 0.3s;
+}
+
+.cv:hover {
+    background-color: var(--theme1);
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 3px;
+    left: 2px;
+    animation: arrow-move 1.1s infinite;
+}
+
+@keyframes arrow-move {
+    from {
+        top: -6px;
+    }
+    to {
+        top: 5px;
+        color: var(--theme3);
+    }
+}
+
+/* ---------- .section3 Styles */
+
+.section3 h1 {
+    font-size: 3.5vmax;
+}
+
+.section3 h3 {
+    font-family: "Roboto", sans-serif;
+    color: #999;
+}
+
+.home-header-fl {
+    font-size: 4.5vmax;
+    color: #999;
+}
+
+.section3 .js {
+    font-size: 30px;
+}
+
+/* js classes */
+
+.show {
+    display: block !important;
+}

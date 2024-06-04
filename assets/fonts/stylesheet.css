@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+        url('KaushanScript-Regular.woff2') format('woff2'),
+        url('KaushanScript-Regular.woff') format('woff'),
+        url('KaushanScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
